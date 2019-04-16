@@ -1,0 +1,59 @@
+
+	
+body{margin: 0;
+	padding: 0;
+	background: url("photo.jpeg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+  
+}
+#countdown{
+background: rgba(53, 54, 56,0.7);
+display: grid;
+grid-gap: 1.5em;
+padding: 20px;
+grid-template-columns: repeat(4,1fr);
+ }
+#countdown div{
+	box-shadow: 5px 5px 20px 5px  #cccccc;
+	margin-top: 20px;
+	border: solid black 1px;
+	padding: 50px;
+	background: lightgrey;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+} 
+img{
+	height: 200px;
+	width: 200px;
+}
+.image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+p{
+	text-align: center;
+	/*color: linear-gradient(‎rgba(192,192,192,0.4) ,rgba( ‎112, 128, 144,0.6));*/
+	color:  #e6e6e6;
+	 font: sans-serif;
+      text-shadow: 10px 10px 10px   #bfbfbf;
+     font-size: 40px;
+}
+@media screen and (max-width: 600px){
+	
+	#countdown{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 10px 10px;
+	
+		margin: 20px auto ;
+		}#countdown div{
+		display: inline-block;
+		width: 60vw;
+		margin: 20px auto;
+	}
+}
